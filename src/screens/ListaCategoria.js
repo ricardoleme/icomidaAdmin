@@ -10,7 +10,7 @@ function ListaCategoria({ data, navigation, theme }) {
     const renderizaImagem = (uri) => {
         return (
           <Image
-            style={{ width: 50, height: 50, marginTop: -65, marginLeft: 5 }}
+            style={{ width: 50, height: 50, marginTop: -64, marginLeft: 8, marginBottom: 8 }}
             source={{ uri }}
           />
         )

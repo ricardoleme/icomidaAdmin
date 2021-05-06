@@ -15,10 +15,14 @@ function Home({navigation, theme}){
     return(
         <>
             <Header titulo="Área Administrativa" subtitulo="iComida" back={false} />
-            <View style={{backgroundColor: colors.surface, paddingHorizontal: 10,
-                          paddingVertical: 20, flex: 1}}>
+            <View style={{backgroundColor: colors.surface, paddingHorizontal: 8,
+                          paddingVertical: 16, flex: 1}}>
                <List.Subheader>Selecione uma das opções:</List.Subheader>
                <FlatList data={opcoes} renderItem={({item}) => (
+                   <View style={{
+                    flex: 1, justifyContent: 'center', backgroundColor: colors.background,
+                    borderRadius: 20, margin: 8
+                }}>
                         <List.Item
                             title={item.nome}
                             style={{backgroundColor: colors.background}}
@@ -28,6 +32,7 @@ function Home({navigation, theme}){
                             onPress={() => navigation.navigate(item.menu)}
                             left={props => <List.Icon {...props} icon={item.icone} />}
                         />
+                        </View>
                 )}
                 keyExtractor={item => item.id.toString()}
                 />

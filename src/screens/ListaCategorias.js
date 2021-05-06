@@ -43,8 +43,8 @@ function ListaCategorias({navigation, theme}){
     return (
         <>
         <Header titulo="Categorias de Restaurantes" back={true} navigation={navigation} />
-        <View style={{backgroundColor: colors.surface, paddingHorizontal: 10,
-        paddingVertical: 20, flex:1}}>
+        <View style={{backgroundColor: colors.surface, paddingHorizontal: 8,
+        paddingVertical: 8, flex:1}}>
             <List.Subheader>
                <Avatar.Icon size={24} icon="refresh"/> Para atualizar os dados 
             </List.Subheader>
