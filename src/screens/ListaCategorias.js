@@ -69,13 +69,14 @@ function ListaCategorias({navigation, theme}){
                 />
             )
             }
-            <FAB
+                  <FAB
               style={styles.fab}
               icon='plus'
               label=''
               onPress={()=> navigation.navigate('AdicionaCategoria')}
-              />
+              />  
         </View>
+        
         </>
     )
 }
